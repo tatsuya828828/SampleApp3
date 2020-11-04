@@ -16,8 +16,8 @@ public class MyViewHolder extends RecyclerView.ViewHolder {
     MyViewHolder(View itemView) {
         super(itemView);
         this.title = itemView.findViewById(R.id.title);
-        this.tag = itemView.findViewById(R.id.tag);
-        this.desc = itemView.findViewById(R.id.desc);
+        this.country = itemView.findViewById(R.id.country);
+        this.name = itemView.findViewById(R.id.name);
     }
 
 }
