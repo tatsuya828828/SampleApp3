@@ -40,14 +40,14 @@ public class MyListAdapter extends RecyclerView.Adapter<MyViewHolder> {
     // ビューにデータを割り当て、リスト項目を生成
     // onBindViewHolderは、リストないの個々の項目を生成する際に呼び出される、
     // 今回は既にonCreateViewHolderで用意されているため、データソースの値を、
-    // 個々のプロパティ(holder.title、holder.tag、holder.desc)に個々の項目を割り当てるだけでよい
+    // 個々のプロパティ(holder.title、holder.country、holder.name)に個々の項目を割り当てるだけでよい
     // onBindViewHolderには引数にpositionとして、現在処理しているリスト項目のインデックス番号が渡されているため、
     // 個々の値には、hits.data.get(position)でアクセスできる
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         holder.title.setText(this.data.get(position).getTitle());
-        holder.tag.setText(this.data.get(position).getTag());
-        holder.desc.setText(this.data.get(position).getDesc());
+        holder.country.setText(this.data.get(position).getCountry());
+        holder.name.setText(this.data.get(position).getName());
     }
 
     // データの項目数を取得
