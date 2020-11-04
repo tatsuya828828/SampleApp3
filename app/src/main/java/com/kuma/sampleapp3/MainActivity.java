@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
         // リストに表示するデータを準備
         String[] titles = {"pagan", "Silence Speaks", "DOWN", "Player Position", "蛍"};
         String[] tags = {"Vitalism", "While She Sleeps", "Destine", "Periphery", "THE BACK HORN"};
-        String[] descs = {"ブラジルのバンドです", "イギリスのバンドです", "オランダのバンドです",
-                        "アメリカのバンドです", "日本のバンドです"};
+        String[] descs = {"ブラジルのバンドの曲です", "イギリスのバンドの曲です", "オランダのバンドの曲です",
+                        "アメリカのバンドの曲です", "日本のバンドの曲です"};
         // 配列の内容をListItemオブジェクトに詰め替え
         ArrayList<ListItem> data = new ArrayList<>();
         for(int i = 0; i < titles.length; i++) {
