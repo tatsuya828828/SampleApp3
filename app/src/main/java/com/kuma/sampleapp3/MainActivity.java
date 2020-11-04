@@ -18,18 +18,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // リストに表示するデータを準備
-        String[] titles = {"pagan", "Silence Speaks", "DOWN", "Player Position", "蛍"};
-        String[] tags = {"Vitalism", "While She Sleeps", "Destine", "Periphery", "THE BACK HORN"};
-        String[] descs = {"ブラジルのバンドの曲です", "イギリスのバンドの曲です", "オランダのバンドの曲です",
-                        "アメリカのバンドの曲です", "日本のバンドの曲です"};
+        String[] titles = {"pagan", "Silence Speaks", "DOWN", "Player Position", "Du Hast", "蛍", "One Hand Killing", "Revival of Darkness"};
+        String[] countries = {"ブラジル", "イギリス", "イギリス", "オランダ", "アメリカ", "ドイツ", "日本", "オーストラリア", "ロシア"};
+        String[] names = {"Vitalism", "Asking Alexandria", "While She Sleeps", "Destine",
+                        "Periphery", "Rammstein", "THE BACK HORN", "Twelve Foot Ninja", "Shokran"};
         // 配列の内容をListItemオブジェクトに詰め替え
         ArrayList<ListItem> data = new ArrayList<>();
         for(int i = 0; i < titles.length; i++) {
             ListItem item = new ListItem();
             item.setId((new Random()).nextLong());
             item.setTitle(titles[i]);
-            item.setTag(tags[i]);
-            item.setDesc(descs[i]);
+            item.setCountry(countries[i]);
+            item.setName(names[i]);
             data.add(item);
         }
 
