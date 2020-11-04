@@ -9,8 +9,8 @@ public class MyViewHolder extends RecyclerView.ViewHolder {
 
     // ビューに配置されたウィジェットを保持しておくためのフィールド
     TextView title;
-    TextView tag;
-    TextView desc;
+    TextView country;
+    TextView name;
 
     // コンストラクター(ウィジェットへの参照を格納)
     MyViewHolder(View itemView) {
